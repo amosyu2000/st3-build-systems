@@ -1,0 +1,5 @@
+{
+	"cmd" : ["$packages/st3-build-systems/st3-build-systems/My C++ Build.bat", "$file"],
+	"working_dir" : "$file_path",
+	"quiet": true,
+}

@@ -1,0 +1,13 @@
+{
+"cmd" : ["$packages/st3-build-systems/st3-build-systems/My C Build.bat", "$file", "default"],
+"working_dir" : "$file_path",
+"quiet": true,
+ 
+"variants":
+[
+	{
+		"name": "Run custom .exe",
+		"cmd" : ["$packages/st3-build-systems/st3-build-systems/My C Build.bat", "$file", "exe"]
+	}
+]
+}

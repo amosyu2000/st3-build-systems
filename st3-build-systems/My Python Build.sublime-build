@@ -1,0 +1,14 @@
+{
+"cmd": ["$packages/st3-build-systems/st3-build-systems/My Python Build.bat", "$file", "default"],
+"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+"selector": "source.python",
+"quiet" : true,
+
+"variants":
+[
+	{
+		"name": "VirtualEnv",
+		"cmd": ["$packages/st3-build-systems/st3-build-systems/My Python Build.bat", "$file", "venv"]
+	}
+]
+}

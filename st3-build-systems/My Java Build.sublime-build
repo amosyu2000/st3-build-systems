@@ -1,0 +1,15 @@
+{
+"cmd": ["$packages/st3-build-systems/st3-build-systems/My Java Build.bat", "$file", "default"],
+"shell" : true,
+"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+"selector": "source.java",
+"quiet" : true,
+
+"variants":
+[
+	{
+		"name": "Create .jar (FIXME)",
+		"cmd": ["$packages/st3-build-systems/st3-build-systems/My Java Build.bat", "$file", "jar"]
+	}
+]
+}
