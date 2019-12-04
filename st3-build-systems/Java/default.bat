@@ -1,3 +1,11 @@
+@echo off
+rem Java Build Batch File
+rem
+rem Repository: amosyu2000/st3-build-systems 
+rem Last Updated: 2019-12-03
+rem Author: Amos Yu - https://amosyu2000.github.io
+
+
 :: This file is used in conjunction with My Java Build.sublime-build
 
 :: %1 is the full path and file name that is passed to this .bat file (ex. C:\Users\Dell\sample.java)
@@ -18,28 +26,15 @@ cd build
 del * /s /q
 
 :: Go to parent directory
-cd.. 
+cd .. 
 
-if %2 == default (
-
-	:: "cmd /c" starts a new instance of cmd
-	: "start cmd /k" opens a new command prompt window
-	: "/wait" pauses the batch file until the window is closed
-	: "javac" creates .class files for every relevant .java file in the project
-	: "&&" executes the next command only if the previous command was successful
-	: "java %~n1" runs the .class file from the build directory
-	cmd /c start /wait cmd /k "javac -d ./build %~n1.java && java -cp ./build %~n1"
-
-)
-
-if %2 == jar (
-
-	javac -d ./build %~n1.java
-
-	cd build
-	jar cvf %~n1.jar *
-
-)
+:: "cmd /c" starts a new instance of cmd
+: "start cmd /k" opens a new command prompt window
+: "/wait" pauses the batch file until the window is closed
+: "javac" creates .class files for every relevant .java file in the project
+: "&&" executes the next command only if the previous command was successful
+: "java %~n1" runs the .class file from the build directory
+cmd /c start /wait cmd /k "javac -d ./build %~n1.java && java -cp ./build %~n1"
 
 :: Clean up all the .class files
 cd build

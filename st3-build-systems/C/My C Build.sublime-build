@@ -1,0 +1,13 @@
+{
+"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/default.bat", "$file"],
+"working_dir" : "$file_path",
+"quiet": true,
+ 
+"variants":
+[
+	{
+		"name": "Custom .exe",
+		"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/custom_exe.bat", "$file"]
+	}
+]
+}
