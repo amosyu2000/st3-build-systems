@@ -3,15 +3,17 @@
 Amos Yu, amosyu2000.github.io  
 
 ## About  
-A Sublime Text 3 (ST3) Package containing scripts for compiling/executing a handful of file types. ST3's built-in build systems do not allow the user to give input at runtime. These Sublime build systems bypass this issue by opening a separate command prompt window to execute the program rather than executing in ST3's build output panel.
+A Sublime Text 3 (ST3) Package containing scripts for compiling/executing a handful of file types. ST3's built-in build systems do not allow the user to give input at runtime. These Sublime build systems bypass this issue by opening a separate command prompt window to execute the program rather than executing in ST3's build output panel.  
+This package has a `test` directory containing test code files for each supported file type.  
+If you encounter any issues using this package, please [open an issue](https://github.com/amosyu2000/st3-build-systems/issues).  
 
 ![Screenshot](https://user-images.githubusercontent.com/46848538/70080896-6bdbb680-15d5-11ea-9c33-e7bda3e974d4.jpg "Python build")  
 
 ## Supported File Types  
-- C  
-- C++  
-- Java  
-- Python  
+- C `.c`  
+- C++ `.cpp`  
+- Java `.java`  
+- Python `.py`  
 
 ## Tips and Tricks
 - `Ctrl+B` is the hotkey for building a file.
