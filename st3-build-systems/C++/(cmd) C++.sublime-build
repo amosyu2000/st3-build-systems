@@ -1,3 +1,9 @@
+// C++ .sublime-build File
+//
+// Repository: amosyu2000/st3-build-systems 
+// Last Updated: 2019-12-12
+// Author: Amos Yu - https://amosyu2000.github.io
+
 {
 	"cmd" : ["$packages/st3-build-systems/st3-build-systems/C++/default.bat", "$file"],
 	"working_dir" : "$file_path",

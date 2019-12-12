@@ -1,11 +1,11 @@
-// Python .sublime-build File
+// Django .sublime-build File
 //
 // Repository: amosyu2000/st3-build-systems 
 // Last Updated: 2019-12-12
 // Author: Amos Yu - https://amosyu2000.github.io
 
 {
-"cmd": ["$packages/st3-build-systems/st3-build-systems/Python/default.bat", "$file"],
+"cmd": [],
 "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
 "selector": "source.python",
 "quiet" : true,
@@ -13,8 +13,8 @@
 "variants":
 [
 	{
-		"name": "Use venv",
-		"cmd": ["$packages/st3-build-systems/st3-build-systems/Python/venv.bat", "$file", "$folder"]
+		"name": "runserver",
+		"cmd": ["$packages/st3-build-systems/st3-build-systems/Django/runserver.bat", "$file", "$folder"]
 	}
 ]
 }
