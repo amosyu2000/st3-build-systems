@@ -7,5 +7,6 @@
 {
 	"cmd" : ["$packages/st3-build-systems/st3-build-systems/C++/default.bat", "$file"],
 	"working_dir" : "$file_path",
+	"file_patterns" : ["*.cpp"],
 	"quiet": true,
 }

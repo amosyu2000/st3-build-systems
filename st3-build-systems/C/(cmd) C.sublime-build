@@ -7,17 +7,18 @@
 {
 "cmd" : ["$packages/st3-build-systems/st3-build-systems/C/default.bat", "$file"],
 "working_dir" : "$file_path",
+"file_patterns" : ["*.c"],
 "quiet": true,
  
 "variants":
-[
-	{
-		"name": "Custom .exe",
-		"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/custom_exe.bat", "$file"]
-	},
-	{
-		"name": "Assembly",
-		"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/assembly.bat", "$file"]
-	}
-]
+	[
+		{
+			"name": "Custom .exe",
+			"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/custom_exe.bat", "$file"]
+		},
+		{
+			"name": "Assembly",
+			"cmd" : ["$packages/st3-build-systems/st3-build-systems/C/assembly.bat", "$file"]
+		}
+	]
 }

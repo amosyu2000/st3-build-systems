@@ -5,16 +5,16 @@
 // Author: Amos Yu - https://amosyu2000.github.io
 
 {
-"cmd": ["$packages/st3-build-systems/st3-build-systems/Python/default.bat", "$file"],
-"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-"selector": "source.python",
+"cmd" : ["$packages/st3-build-systems/st3-build-systems/Python/default.bat", "$file"],
+"file_regex" : "^(...*?):([0-9]*):?([0-9]*)",
+"file_patterns" : ["*.py"],
 "quiet" : true,
 
 "variants":
-[
-	{
-		"name": "Use venv",
-		"cmd": ["$packages/st3-build-systems/st3-build-systems/Python/venv.bat", "$file", "$folder"]
-	}
-]
+	[
+		{
+			"name" : "Use venv",
+			"cmd" : ["$packages/st3-build-systems/st3-build-systems/Python/venv.bat", "$file", "$folder"]
+		}
+	]
 }
