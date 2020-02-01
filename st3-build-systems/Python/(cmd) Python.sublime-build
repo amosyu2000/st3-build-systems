@@ -13,8 +13,12 @@
 "variants":
 	[
 		{
-			"name" : "Use venv",
+			"name" : "venv",
 			"cmd" : ["$packages/st3-build-systems/st3-build-systems/Python/venv.bat", "$file", "$folder"]
-		}
+		},
+		{
+			"name" : "pipenv",
+			"cmd" : ["$packages/st3-build-systems/st3-build-systems/Python/pipenv.bat", "$file", "$folder"]
+		},
 	]
 }
