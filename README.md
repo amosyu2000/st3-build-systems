@@ -19,4 +19,5 @@ If you encounter any issues using this package, please [open an issue](https://g
 - `Ctrl+B` is the hotkey for building a file.
 - Change your build system to automatic so that ST3 remembers which build system to use for each file type. Go to Tools > Build System > Automatic.  
 - Some of the build systems in this package have custom features (ex. Compiling a custom `.exe` file in C instead of the generic `a.exe`). The hotkey `Ctrl+Shift+B` will access these.
+- An important custom feature is the ability to run Python files under a virtual environment. There is support for the `virtualenv` and `pipenv` packages, however, it is HIGHLY recommended to use `pipenv` in your projects because it is more reliable and user-friendly.   
 - You may want to disable the output panel in ST3 from appearing every time you run a file. Go to Preferences > Settings and add `"show_panel_on_build": false` to your `Preferences.sublime-settings -- User` file.  
