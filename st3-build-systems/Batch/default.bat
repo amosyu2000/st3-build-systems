@@ -7,4 +7,4 @@ rem Author: Amos Yu - https://amosyu2000.github.io
 
 rem %~nx1 is the file name with extension
 
-start cmd /k "%~nx1"
+%~nx1
