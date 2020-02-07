@@ -1,0 +1,12 @@
+// Batch .sublime-build File
+//
+// Repository: amosyu2000/st3-build-systems 
+// Last Updated: 2020-02-07
+// Author: Amos Yu - https://amosyu2000.github.io
+
+{
+"cmd" : ["$packages/st3-build-systems/st3-build-systems/Batch/default.bat", "$file"],
+"file_regex" : "^(...*?):([0-9]*):?([0-9]*)",
+"file_patterns" : ["*.bat"],
+"quiet" : true,
+}
